@@ -1,0 +1,611 @@
+
+#bodyIndex {
+
+    background-color: #B4A390;
+    width: 100%;
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #headerIndex {
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  div.WelkomIndex {
+    position: relative;
+    z-index: 1;
+    width: 1250px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: auto;
+
+    font-size: 180px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+  }
+
+  div.WelkomIndex:hover {
+    transform: scale(130%);
+    transition-duration: 5s;
+  }
+
+  a {
+    width: 400px;
+    height: 100px;
+    color: #FDEDCF;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #796363;
+    transition-duration: 5s;
+  }
+
+
+  div.WelkomIndex span {
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    display: inline-block;
+
+    text-transform: none;
+    animation: Welkom 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+
+  @keyframes WelkomIndex {
+
+    0%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+
+    20% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /*---------------------------------everything above for index----------------------------*/
+
+  
+#bodyContact {
+    background-color: white;
+    width: 100%;
+    height: 2000px;
+    margin: 0px;
+  }
+
+
+#navIncludeAll {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin-top: -8px;
+    background-color: #ffffff;
+  }
+#navUl {
+    padding: 20px;
+    font-size: 12px;
+    float: right;
+  }
+
+.navLi {
+    display: inline;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    word-spacing: 10px;
+  }
+.navLi a {
+    color:#796363;
+}
+.navLi a:hover {
+    color:#000000;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+  #logotje {
+    position: absolute;
+    background-image: url(foto/logotje.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+    margin-left: 400px;
+    margin-top: 10px;
+  }
+
+  #mainContact {
+    height: 1200px;
+    width: 100%;
+    background-image: linear-gradient(#927E75, #FDEDCF 100%);
+  }
+
+
+  .fadeinContact {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    width:100%;
+    height:700px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #textcontainerContact{
+    display: flex;
+    width:1200px;
+    height:1400px;
+    padding:10px;
+    margin-left:10%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #mainTextPlaceholder1{
+    display:flex;
+    height: 700px;
+    width: 600px;
+    padding: 5px;
+    margin-left:20%;
+    flex-direction: column;
+  }
+
+
+  #mainTextPlaceholder1 h1 {
+    margin-top:300px;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    color: #796363;
+  }
+
+  #mainTextPlaceholder1 p {
+    margin-top:50px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: rgb(255, 255, 255);
+  }
+
+
+  #sectionContactGif {
+    position: sticky;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 1000px;
+  }
+
+  div.GIF {
+    filter: invert(40%) opacity(70%);
+    background-image: url(foto/gehucht.gif);
+    background-blend-mode: exclusion;
+    width: 100%;
+    height: 1000px;
+  }
+
+  #footerContact {
+    height: 400px;
+    width: 100%;
+    background-color: #FDEDCF;
+    margin-top:300px;
+  }
+  
+  #footerTextPlaceholder {
+    width:600px;
+    height:300px;
+    margin-left:15%;
+    padding-top:50px;
+  }
+  #footerTextPlaceholder h1{
+    color:#796363;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-weight: bold;
+ 
+  }
+  #footerTextPlaceholder p{
+    color:#796363;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: bold;
+  }
+
+   /*---------------------------------everything above for contact----------------------------*/
+
+   #bodyVorm {
+    height:1000px;
+    width:100%;
+    margin: 0px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  #mainEtiketten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    height:1000px;
+    padding:5px;
+  }
+  
+  .etiketten {
+    width:400px;
+    height:800px;
+    align-items: center;
+    margin-top:200px;
+  }
+
+  .etiketFoto{
+    cursor: pointer;
+    width:400px;
+    height:700px;
+    object-fit: cover;
+  }
+
+  .etiketFoto:hover{
+    object-fit: contain;
+  }
+  .omschrijvingEtiket{
+    width:380px;
+    height:50px;
+    padding: 10px;
+    margin-top:-5px;
+    font-family: "quicksand",sans-serif;
+    font-weight:bold;
+    text-align:center;
+    color:white;
+    background-color:rgb(68, 62, 62)
+  }
+
+  .omschrijvingEtiket p{
+    text-align:center;
+    color:white;
+    margin-left:40px;
+  }
+
+  #mainTshirt{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width:100%;
+    height:1100px;
+    margin-top:300px;
+    background-image: linear-gradient(#927E75, rgb(190, 237, 210) 100%);
+  }
+
+  .Tshirt{
+    margin-top: 50px;
+    width:700px;
+    height:800px;
+  }
+  .Tshirt h1{
+    width:500px;
+    color:#796363;
+    font-family: 'Bebas Neue', cursive;
+    font-size:45px;
+    margin: 50px;
+  }
+  
+  .overlayShirt{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.493);
+  }
+  .overlayShirt:hover{
+    transition-duration: 2s ease-in;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .shirtFoto{
+    width:700px;
+    height:700px;
+    object-fit: cover;
+  }
+ 
+  .omschrijvingShirt {
+    width:680px;
+    height:50px;
+    padding: 10px;
+    margin-top:-5px;
+    font-family: "quicksand",sans-serif;
+    font-weight:bold;
+
+    background-color:rgba(0, 0, 0, 0.548)
+  }
+  .omschrijvingShirt p{
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    height:50px;
+    margin-left:270px;
+  }
+  .omschrijvingShirt:hover {
+    cursor:pointer;
+    padding-bottom:40px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+  
+#mainLogos{
+  width:100%;
+  height:800px;
+  margin-top:300px;
+}
+#logoContainer{
+  width:100%;
+  height:700px;
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+}
+
+.logos{
+  width:300px;
+  height:300px;
+  margin:50px;
+  object-fit: contain;
+  transition:transform 2s ease;
+}
+
+.logos:hover{
+  transform:scale(1.33);
+  cursor: pointer;
+}
+
+  
+#mainVVV{
+  width:100%;
+  height:500px;
+  margin-top:100px;
+  background-color: #FDEDCF;
+}
+
+#textPlaceholderVVV{
+  width:800px;
+  height:450px;
+  padding-top:50px;
+  margin-left:10%;
+}
+#textPlaceholderVVV h1{
+  font-family: 'Bebas Neue', cursive;
+  color:#796363;
+
+}
+#textPlaceholderVVV p{
+  font-family: 'quicksand', sans-serif;
+  color:#927E75;
+}
+#textPlaceholderVVV a{
+  text-decoration: none;
+}
+
+#buttonVVV{
+  cursor: pointer;
+  width:100px;
+  height:80px;
+  padding: 8px;
+  font-family: 'quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color:#927E75;
+  background-color: #b5f2d2;
+  border-style:none;
+  margin-top:-5px;
+
+}
+/*--------------------------------------------everything above for vormgeving-----------------*/
+
+#bodyFotografie{
+  height:3000px;
+  width:100vw;
+  margin:0px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+
+#headerFotografie{
+  width:100%;
+  height:500px;
+  padding-top:200px;
+}
+#textContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:400px;
+  height:500px;
+  margin-left:30%;
+}
+.textPlaceholderFotografie{
+  padding:10px;
+  width:350px;
+  height:400px;
+}
+
+.textPlaceholderFotografie h1{
+  width:350px;
+  height:50px;
+  font-family: "Bebas Neue",cursive;
+  font-size:50px;
+  font-weight:bold;
+  letter-spacing: 3px;
+  color: #927E75;
+}
+
+.textPlaceholderFotografie p{
+  width:300px;
+  height:100px;
+  font-family: "quicksand",sans-serif;
+  font-size:16px;
+  color: #000000;
+}
+
+#fadeinFotografie {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeinFotografie {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#mainFotografie {
+  width:100%;
+  height:2000px;
+  margin-top:100px;
+}
+
+#containerFotografie {
+  display: flex;
+  flex-direction: row;
+  justify-content:baseline;
+  flex-wrap: wrap;
+  width: 100%;
+  height:1000px;
+  margin-left:5%;
+  margin-top: 50px;
+}
+
+
+.foto{
+  object-fit: cover;
+  margin:10px;
+  width:500px;
+  height:600px;
+}
+
+.foto:hover {
+  cursor: pointer;
+  object-fit: contain;
+}
+
+#footerFotografie {
+  height:400px;
+  width:100%;
+  margin-top:1000px;
+  background-color:#927E75;
+}
+
+
+/*--------------------------------------------everything above for fotografie-----------------*/
+
+#bodyDump{
+  height:3200px;
+  width:100%;
+  margin:0px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+#headerDump {
+  width:100%;
+  height:300px;
+  padding-top:200px;
+   
+}
+.fadeinDump {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#textPlaceholderDump {
+  width:300px;
+  height:220px;
+  margin-left:45%;
+}
+
+#textPlaceholderDump h1 {
+  font-family: "Bebas Neue",cursive;
+  font-size:50px;
+  font-weight:bold;
+  letter-spacing: 3px;
+  color:  #796363; 
+}
+
+#textPlaceholderDump p {
+  font-family: "quicksand",sans-serif;
+  font-size:15px;
+  color:  #796363;
+}
+
+#mainDump {
+  width:100%;
+  height:2800px;
+  margin-top:100px;
+}
+
+#illustraties {
+  display:flex;
+  flex-direction: row;
+  justify-content: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+  height:2500px;
+}
+
+.tekening {
+  width:500px;
+  height:600px;
+  object-fit: contain;
+  margin:10px;
+}
+
+.tekening:hover {
+  cursor: pointer;
+}
+ 
+
+
+#footerDump {
+  height:400px;
+  width:100%;
+  
+  background-color:#927E75;
+}
